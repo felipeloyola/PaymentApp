@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1229FC6120D925DD00EAF007 /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 1229FC6020D925DD00EAF007 /* AppDependencies.m */; };
+		1249EAF120D860C200FC4393 /* PurchaseStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1249EAF020D860C200FC4393 /* PurchaseStoreManager.m */; };
+		1249EAF820D8933300FC4393 /* AmountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1249EAF720D8933300FC4393 /* AmountViewController.m */; };
+		1249EAFB20D89D0A00FC4393 /* AmountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1249EAFA20D89D0A00FC4393 /* AmountPresenter.m */; };
+		1249EB0020D8A2CA00FC4393 /* AmountWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1249EAFF20D8A2CA00FC4393 /* AmountWireframe.m */; };
 		12511D2620D2139700E433BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12511D2520D2139700E433BD /* AppDelegate.m */; };
-		12511D2920D2139700E433BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12511D2820D2139700E433BD /* ViewController.m */; };
 		12511D2C20D2139700E433BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12511D2A20D2139700E433BD /* Main.storyboard */; };
 		12511D2E20D2139A00E433BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12511D2D20D2139A00E433BD /* Assets.xcassets */; };
 		12511D3120D2139A00E433BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12511D2F20D2139A00E433BD /* LaunchScreen.storyboard */; };
@@ -18,6 +22,10 @@
 		12F83E8320D6B0C10036656D /* PaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E8220D6B0C10036656D /* PaymentMethod.m */; };
 		12F83E8720D6B1DC0036656D /* CardIssuer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E8620D6B1DC0036656D /* CardIssuer.m */; };
 		12F83E8A20D6B2570036656D /* Installment.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E8920D6B2570036656D /* Installment.m */; };
+		12F83E9720D6B7600036656D /* VTDRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E9520D6B7600036656D /* VTDRootWireframe.m */; };
+		12F83E9E20D6BFBC0036656D /* AmountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E9D20D6BFBC0036656D /* AmountInteractor.m */; };
+		12F83EA220D6C2A30036656D /* Purchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83EA120D6C2A30036656D /* Purchase.m */; };
+		12F83EA720D800C40036656D /* MethodAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83EA620D800C40036656D /* MethodAPIManager.m */; };
 		89DC88779A012C94DDFBDC2A /* libPods-PaymentApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 815C41523F9434B763EF051D /* libPods-PaymentApp.a */; };
 		97A5A366D56AE8978D011678 /* libPods-PaymentAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1561FA40095C667E180C238E /* libPods-PaymentAppTests.a */; };
 		CA10C1A682AB994376B0A742 /* libPods-PaymentAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E77A50C14228DAB4AB6F599C /* libPods-PaymentAppUITests.a */; };
@@ -41,11 +49,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1229FC5F20D925DD00EAF007 /* AppDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
+		1229FC6020D925DD00EAF007 /* AppDependencies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
+		1229FC6320D9663A00EAF007 /* MethodModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodModule.h; sourceTree = "<group>"; };
+		1249EAEF20D860C200FC4393 /* PurchaseStoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchaseStoreManager.h; sourceTree = "<group>"; };
+		1249EAF020D860C200FC4393 /* PurchaseStoreManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseStoreManager.m; sourceTree = "<group>"; };
+		1249EAF620D8933300FC4393 /* AmountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountViewController.h; sourceTree = "<group>"; };
+		1249EAF720D8933300FC4393 /* AmountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmountViewController.m; sourceTree = "<group>"; };
+		1249EAF920D89D0A00FC4393 /* AmountPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountPresenter.h; sourceTree = "<group>"; };
+		1249EAFA20D89D0A00FC4393 /* AmountPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmountPresenter.m; sourceTree = "<group>"; };
+		1249EAFD20D89D5B00FC4393 /* AmountModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountModule.h; sourceTree = "<group>"; };
+		1249EAFE20D8A2CA00FC4393 /* AmountWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountWireframe.h; sourceTree = "<group>"; };
+		1249EAFF20D8A2CA00FC4393 /* AmountWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmountWireframe.m; sourceTree = "<group>"; };
+		1249EB0120D8AC6400FC4393 /* AmountViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountViewInterface.h; sourceTree = "<group>"; };
 		12511D2120D2139700E433BD /* PaymentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12511D2420D2139700E433BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12511D2520D2139700E433BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		12511D2720D2139700E433BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		12511D2820D2139700E433BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		12511D2B20D2139700E433BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12511D2D20D2139A00E433BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12511D3020D2139A00E433BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +82,14 @@
 		12F83E8620D6B1DC0036656D /* CardIssuer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardIssuer.m; sourceTree = "<group>"; };
 		12F83E8820D6B2570036656D /* Installment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Installment.h; sourceTree = "<group>"; };
 		12F83E8920D6B2570036656D /* Installment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Installment.m; sourceTree = "<group>"; };
+		12F83E9520D6B7600036656D /* VTDRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDRootWireframe.m; sourceTree = "<group>"; };
+		12F83E9620D6B7600036656D /* VTDRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDRootWireframe.h; sourceTree = "<group>"; };
+		12F83E9C20D6BFBC0036656D /* AmountInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountInteractor.h; sourceTree = "<group>"; };
+		12F83E9D20D6BFBC0036656D /* AmountInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmountInteractor.m; sourceTree = "<group>"; };
+		12F83EA020D6C2A30036656D /* Purchase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Purchase.h; sourceTree = "<group>"; };
+		12F83EA120D6C2A30036656D /* Purchase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Purchase.m; sourceTree = "<group>"; };
+		12F83EA520D800C40036656D /* MethodAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodAPIManager.h; sourceTree = "<group>"; };
+		12F83EA620D800C40036656D /* MethodAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodAPIManager.m; sourceTree = "<group>"; };
 		1561FA40095C667E180C238E /* libPods-PaymentAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PaymentAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		293544A68E7992C8AA7464C3 /* Pods-PaymentAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaymentAppUITests/Pods-PaymentAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6B48F3B390B5A1455DD50B24 /* Pods-PaymentAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaymentAppUITests/Pods-PaymentAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +129,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1229FC6220D965F000EAF007 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1229FC6320D9663A00EAF007 /* MethodModule.h */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		1249EAF220D8920500FC4393 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1249EAF320D8920A00FC4393 /* Presenter */,
+				1249EAF420D8921C00FC4393 /* View */,
+				1249EAF520D8922500FC4393 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		1249EAF320D8920A00FC4393 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1249EAF920D89D0A00FC4393 /* AmountPresenter.h */,
+				1249EAFA20D89D0A00FC4393 /* AmountPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1249EAF420D8921C00FC4393 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1249EAF620D8933300FC4393 /* AmountViewController.h */,
+				1249EAF720D8933300FC4393 /* AmountViewController.m */,
+				1249EB0120D8AC6400FC4393 /* AmountViewInterface.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1249EAF520D8922500FC4393 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				1249EAFE20D8A2CA00FC4393 /* AmountWireframe.h */,
+				1249EAFF20D8A2CA00FC4393 /* AmountWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		1249EAFC20D89D4600FC4393 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1249EAFD20D89D5B00FC4393 /* AmountModule.h */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
 		12511D1820D2139700E433BD = {
 			isa = PBXGroup;
 			children = (
@@ -127,11 +208,9 @@
 		12511D2320D2139700E433BD /* PaymentApp */ = {
 			isa = PBXGroup;
 			children = (
-				12F83E8420D6B0C70036656D /* Model */,
+				12F83E9220D6B6D60036656D /* Classes */,
 				12511D2420D2139700E433BD /* AppDelegate.h */,
 				12511D2520D2139700E433BD /* AppDelegate.m */,
-				12511D2720D2139700E433BD /* ViewController.h */,
-				12511D2820D2139700E433BD /* ViewController.m */,
 				12511D2A20D2139700E433BD /* Main.storyboard */,
 				12511D2D20D2139A00E433BD /* Assets.xcassets */,
 				12511D2F20D2139A00E433BD /* LaunchScreen.storyboard */,
@@ -168,8 +247,127 @@
 				12F83E8620D6B1DC0036656D /* CardIssuer.m */,
 				12F83E8820D6B2570036656D /* Installment.h */,
 				12F83E8920D6B2570036656D /* Installment.m */,
+				12F83EA020D6C2A30036656D /* Purchase.h */,
+				12F83EA120D6C2A30036656D /* Purchase.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		12F83E8D20D6B55A0036656D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				12F83E9820D6BDB20036656D /* Amount */,
+				12F83E8E20D6B5750036656D /* Method */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		12F83E8E20D6B5750036656D /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				1229FC6220D965F000EAF007 /* Module Interface */,
+				12F83E8F20D6B61C0036656D /* Application Logic */,
+			);
+			path = Method;
+			sourceTree = "<group>";
+		};
+		12F83E8F20D6B61C0036656D /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				12F83E9120D6B6520036656D /* Manager */,
+				12F83E9020D6B6480036656D /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		12F83E9020D6B6480036656D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		12F83E9120D6B6520036656D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		12F83E9220D6B6D60036656D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12F83E9320D6B6EF0036656D /* Common */,
+				12F83E8D20D6B55A0036656D /* Modules */,
+				1229FC5F20D925DD00EAF007 /* AppDependencies.h */,
+				1229FC6020D925DD00EAF007 /* AppDependencies.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		12F83E9320D6B6EF0036656D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				12F83EA420D800490036656D /* Manager */,
+				12F83E8420D6B0C70036656D /* Model */,
+				12F83E9420D6B7270036656D /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		12F83E9420D6B7270036656D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12F83E9620D6B7600036656D /* VTDRootWireframe.h */,
+				12F83E9520D6B7600036656D /* VTDRootWireframe.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12F83E9820D6BDB20036656D /* Amount */ = {
+			isa = PBXGroup;
+			children = (
+				1249EAFC20D89D4600FC4393 /* Module Interface */,
+				1249EAF220D8920500FC4393 /* User Interface */,
+				12F83E9920D6BDC60036656D /* Application Logic */,
+			);
+			path = Amount;
+			sourceTree = "<group>";
+		};
+		12F83E9920D6BDC60036656D /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				12F83EA320D8002F0036656D /* Manager */,
+				12F83E9A20D6BE5F0036656D /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		12F83E9A20D6BE5F0036656D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				12F83E9C20D6BFBC0036656D /* AmountInteractor.h */,
+				12F83E9D20D6BFBC0036656D /* AmountInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		12F83EA320D8002F0036656D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				12F83EA520D800C40036656D /* MethodAPIManager.h */,
+				12F83EA620D800C40036656D /* MethodAPIManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		12F83EA420D800490036656D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1249EAEF20D860C200FC4393 /* PurchaseStoreManager.h */,
+				1249EAF020D860C200FC4393 /* PurchaseStoreManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		2D9B9D1C6EB9C54C0DAFD080 /* Pods */ = {
@@ -385,12 +583,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12511D2920D2139700E433BD /* ViewController.m in Sources */,
+				12F83EA720D800C40036656D /* MethodAPIManager.m in Sources */,
+				12F83EA220D6C2A30036656D /* Purchase.m in Sources */,
+				1249EAFB20D89D0A00FC4393 /* AmountPresenter.m in Sources */,
 				12F83E8320D6B0C10036656D /* PaymentMethod.m in Sources */,
+				1249EAF820D8933300FC4393 /* AmountViewController.m in Sources */,
 				12511D3420D2139A00E433BD /* main.m in Sources */,
+				1229FC6120D925DD00EAF007 /* AppDependencies.m in Sources */,
 				12F83E8720D6B1DC0036656D /* CardIssuer.m in Sources */,
+				1249EB0020D8A2CA00FC4393 /* AmountWireframe.m in Sources */,
+				1249EAF120D860C200FC4393 /* PurchaseStoreManager.m in Sources */,
+				12F83E9E20D6BFBC0036656D /* AmountInteractor.m in Sources */,
 				12511D2620D2139700E433BD /* AppDelegate.m in Sources */,
 				12F83E8A20D6B2570036656D /* Installment.m in Sources */,
+				12F83E9720D6B7600036656D /* VTDRootWireframe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
