@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "PaymentMethod.h"
 #import "CardIssuer.h"
+#import "Installment.h"
 
 @interface Purchase : NSObject
 @property (assign, nonatomic) int amount;
 @property (strong, nonatomic) PaymentMethod * method;
 @property (strong, nonatomic) CardIssuer * cardIssuer;
+@property (strong, nonatomic) Installment * installment;
 
 @end

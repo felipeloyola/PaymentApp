@@ -129,5 +129,41 @@
             </objects>
             <point key="canvasLocation" x="1953" y="113"/>
         </scene>
+        <!--Installment View Controller-->
+        <scene sceneID="F98-nh-iBF">
+            <objects>
+                <viewController storyboardIdentifier="InstallmentViewController" id="i3p-hn-PaQ" customClass="InstallmentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X1P-Wp-4Ui">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhU-6D-wqD">
+                                <rect key="frame" x="28" y="236" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjT-j1-b3M">
+                                <rect key="frame" x="268" y="587" width="57" height="30"/>
+                                <state key="normal" title="Finalizar"/>
+                                <connections>
+                                    <action selector="didTapFinish:" destination="i3p-hn-PaQ" eventType="touchUpInside" id="bwA-Tm-pm6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QhU-6D-wqD" firstAttribute="centerY" secondItem="7di-uq-C5s" secondAttribute="centerY" id="2KC-dH-RgL"/>
+                            <constraint firstItem="7di-uq-C5s" firstAttribute="trailing" secondItem="QjT-j1-b3M" secondAttribute="trailing" constant="50" id="Juy-zm-IiU"/>
+                            <constraint firstItem="QhU-6D-wqD" firstAttribute="centerX" secondItem="7di-uq-C5s" secondAttribute="centerX" id="QeD-s8-wvY"/>
+                            <constraint firstItem="7di-uq-C5s" firstAttribute="bottom" secondItem="QjT-j1-b3M" secondAttribute="bottom" constant="50" id="gdv-aI-CXL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7di-uq-C5s"/>
+                    </view>
+                    <connections>
+                        <outlet property="installmentPicker" destination="QhU-6D-wqD" id="QTV-IU-sbm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cx-fD-WLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2698" y="90"/>
+        </scene>
     </scenes>
 </document>

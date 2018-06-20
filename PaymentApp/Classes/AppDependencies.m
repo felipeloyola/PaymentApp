@@ -23,6 +23,11 @@
 #import "BankInteractor.h"
 #import "BankAPIManager.h"
 
+#import "InstallmentWireframe.h"
+#import "InstallmentPresenter.h"
+#import "InstallmentInteractor.h"
+#import "InstallmentAPIManager.h"
+
 
 @interface AppDependencies ()
 
@@ -98,6 +103,15 @@
     
     methodWireframe.bankWireframe = bankWireframe;
     methodWireframe.amountWireframe = amountWireFrame;
+    
+    InstallmentWireframe *installmentWireframe = [[InstallmentWireframe alloc] init];
+    InstallmentPresenter *installmentPresenter = [[InstallmentPresenter alloc] init];
+    InstallmentInteractor *installmentInteractor = [[InstallmentInteractor alloc] initWithDataManager:[[InstallmentAPIManager alloc] init]];
+    
+    installmentInteractor.output = installmentPresenter;
+    installmentInteractor.manager = purchaseManager;
+    
+    installmentPresenter.installmentInteractor = installmentInteractor;
     
     
  
