@@ -12,6 +12,10 @@
 #import "VTDRootWireframe.h"
 #import "AmountPresenter.h"
 #import "AmountInteractor.h"
+#import "MethodWireframe.h"
+#import "MethodPresenter.h"
+#import "MethodInteractor.h"
+#import "MethodAPIManager.h"
 
 
 @interface AppDependencies ()
@@ -23,24 +27,24 @@
 
 @implementation AppDependencies
 
-- (id)init
-{
-    if ((self = [super init]))
-    {
-        [self configureDependencies];
+- (instancetype)initWithWindows:(UIWindow *)window{
+    
+    if ((self = [super init])){
+        [self configureDependencies:window];
     }
     
     return self;
 }
 
-- (void)installRootViewControllerIntoWindow:(UIWindow *)window
-{
-    [self.amountWireFrame presentAmountInterfaceFromWindow:window];
+- (void)installRootViewController{
+    [self.amountWireFrame presentAmountInterface];
 }
 
-- (void)configureDependencies
+- (void)configureDependencies:(UIWindow *)window
 {
     VTDRootWireframe *rootWireframe = [[VTDRootWireframe alloc] init];
+    rootWireframe.window =  window;
+    
     
     AmountWireframe *amountWireFrame = [[AmountWireframe alloc] init];
     AmountPresenter *amountPresenter = [[AmountPresenter alloc] init];
@@ -54,8 +58,21 @@
     
     self.amountWireFrame = amountWireFrame;
     
+    MethodWireframe *methodWireframe = [[MethodWireframe alloc] init];
+    MethodPresenter *methodPresenter = [[MethodPresenter alloc] init];
+    MethodInteractor *methodInteractor = [[MethodInteractor alloc] initWithDataManager:[[MethodAPIManager alloc] init]];
     
+    methodInteractor.output = methodPresenter;
     
+    methodPresenter.methodInteractor = methodInteractor;
+    methodPresenter.methodWireframe = methodWireframe;
+    
+    methodWireframe.rootWireframe = rootWireframe;
+    methodWireframe.methodPresenter = methodPresenter;
+    
+    amountWireFrame.methodWireframe = methodWireframe;
+    
+ 
 }
 
 @end

@@ -28,7 +28,8 @@
 
 @interface VTDRootWireframe : NSObject
 
-- (void)showRootViewController:(UIViewController *)viewController
-                      inWindow:(UIWindow *)window;
+@property(nonatomic,strong) UIWindow *window;
+
+- (void)showRootViewController:(UIViewController *)viewController;
 
 @end

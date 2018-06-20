@@ -10,6 +10,7 @@
 #import "AmountViewController.h"
 #import "VTDRootWireframe.h"
 #import "AmountPresenter.h"
+#import "MethodWireframe.h"
 
 static NSString *ListViewControllerIdentifier = @"AmountViewController";
 
@@ -21,20 +22,19 @@ static NSString *ListViewControllerIdentifier = @"AmountViewController";
 
 @implementation AmountWireframe
 
-- (void)presentAmountInterfaceFromWindow:(UIWindow *)window
-{
+- (void)presentAmountInterface{
+    
     AmountViewController *amountViewController = [self amountViewControllerFromStoryboard];
     amountViewController.eventHandler = self.amountPresenter;
     self.amountPresenter.interface = amountViewController;
     self.amountViewController = amountViewController;
     
-    [self.rootWireframe showRootViewController:amountViewController
-                                      inWindow:window];
+    [self.rootWireframe showRootViewController:amountViewController];
 }
 
 
-- (AmountViewController *)amountViewControllerFromStoryboard
-{
+- (AmountViewController *)amountViewControllerFromStoryboard{
+    
     UIStoryboard *storyboard = [self mainStoryboard];
     AmountViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:ListViewControllerIdentifier];
     
@@ -42,12 +42,15 @@ static NSString *ListViewControllerIdentifier = @"AmountViewController";
 }
 
 
-- (UIStoryboard *)mainStoryboard
-{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main"
-                                                         bundle:[NSBundle mainBundle]];
+- (UIStoryboard *)mainStoryboard{
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
     return storyboard;
+}
+
+- (void)presentMethodInterface{
+    [self.methodWireframe presentMethodInterface];
 }
 
 @end

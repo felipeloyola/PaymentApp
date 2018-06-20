@@ -14,12 +14,16 @@
 - (void)saveAmount:(int) amount{
     
     [self.amountInteractor save:amount];
-    
+    [self.amountWireframe presentMethodInterface];
+
 }
 
 - (void) updateView{
     
     [self.interface initPreviusAmount:[self.amountInteractor findPreviusAmount]];
+    
 }
+
+
 
 @end

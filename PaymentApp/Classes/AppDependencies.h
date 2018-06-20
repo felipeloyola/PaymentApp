@@ -11,6 +11,8 @@
 
 @interface AppDependencies : NSObject
 
-- (void)installRootViewControllerIntoWindow:(UIWindow *)window;
+- (instancetype)initWithWindows:(UIWindow *)window;
+
+- (void)installRootViewController;
 
 @end

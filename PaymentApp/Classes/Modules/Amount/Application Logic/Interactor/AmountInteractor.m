@@ -24,6 +24,7 @@
     if ([self.manager findPurchase]){
         Purchase *purchase = [self.manager findPurchase];
         purchase.amount = amount;
+
     }
     
 }

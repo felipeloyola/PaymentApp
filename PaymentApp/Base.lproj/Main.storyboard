@@ -36,6 +36,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <connections>
+                                    <action selector="didPressEnter:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="cen-5p-ioJ"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,6 +57,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="553" y="113"/>
+        </scene>
+        <!--Method View Controller-->
+        <scene sceneID="Jyy-dD-5lY">
+            <objects>
+                <viewController storyboardIdentifier="MethodViewController" id="Mws-Ik-tqJ" customClass="MethodViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="97g-bI-hgE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Pb-zz-Tp0">
+                                <rect key="frame" x="28" y="236" width="320" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Pb-zz-Tp0" firstAttribute="centerX" secondItem="jz7-Y0-JSG" secondAttribute="centerX" id="aDv-Lh-iow"/>
+                            <constraint firstItem="2Pb-zz-Tp0" firstAttribute="centerY" secondItem="jz7-Y0-JSG" secondAttribute="centerY" id="gI9-zs-Znc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jz7-Y0-JSG"/>
+                    </view>
+                    <connections>
+                        <outlet property="methodPicker" destination="2Pb-zz-Tp0" id="Hvh-Wa-M2Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mt5-jv-q4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="113"/>
         </scene>
     </scenes>
 </document>

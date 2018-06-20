@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PaymentMethod.h"
+
 
 @protocol MethodModule <NSObject>
 
-- (void)saveMethod:(PaymentMethod*) amount;
+- (void)saveMethod:(NSString *)methodId name:(NSString *)name paymentTypeId:(NSString *)paymentTypeId status:(NSString *)status secureThumbnail:(NSURL *)secureThumbnail minAllowedAmount:(float)minAllowedAmount maxAllowedAmount:(float)maxAllowedAmount;
+
 - (void)updateView;
 
 @end

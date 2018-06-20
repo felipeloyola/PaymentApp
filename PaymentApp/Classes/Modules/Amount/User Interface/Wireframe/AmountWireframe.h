@@ -11,12 +11,15 @@
 
 @class VTDRootWireframe;
 @class AmountPresenter;
+@class MethodWireframe;
 
 @interface AmountWireframe : NSObject
 
 @property (nonatomic, strong) AmountPresenter *amountPresenter;
 @property (nonatomic, strong) VTDRootWireframe *rootWireframe;
+@property (nonatomic, strong) MethodWireframe *methodWireframe;
 
-- (void)presentAmountInterfaceFromWindow:(UIWindow *)window;
+- (void)presentAmountInterface;
+- (void)presentMethodInterface;
 
 @end

@@ -25,7 +25,7 @@
                                      name:[aCard valueForKey:@"name"]
                                      paymentTypeId:[aCard valueForKey:@"payment_type_id"]
                                      status:[aCard valueForKey:@"status"]
-                                     secureThumbnail:[aCard valueForKey:@"secure_thumbnail"]
+                                     secureThumbnail:[NSURL URLWithString:[aCard valueForKey:@"secure_thumbnail"]] 
                                      minAllowedAmount:[[aCard valueForKey:@"min_allowed_amount"] intValue]
                                      maxAllowedAmount:[[aCard valueForKey:@"max_allowed_amount"] intValue]];
             [methods addObject:method];

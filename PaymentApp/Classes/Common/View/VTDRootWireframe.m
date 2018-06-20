@@ -26,17 +26,16 @@
 
 @implementation VTDRootWireframe
 
-- (void)showRootViewController:(UIViewController *)viewController
-                      inWindow:(UIWindow *)window
-{
-    UINavigationController *navigationController = [self navigationControllerFromWindow:window];
+- (void)showRootViewController:(UIViewController *)viewController{
+    
+    UINavigationController *navigationController = [self navigationController];
     navigationController.viewControllers = @[viewController];
 }
 
 
-- (UINavigationController *)navigationControllerFromWindow:(UIWindow *)window
+- (UINavigationController *)navigationController
 {
-    UINavigationController *navigationController = (UINavigationController *)[window rootViewController];
+    UINavigationController *navigationController = (UINavigationController *)[self.window rootViewController];
     
     return navigationController;
 }

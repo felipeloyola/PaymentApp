@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1229FC6120D925DD00EAF007 /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 1229FC6020D925DD00EAF007 /* AppDependencies.m */; };
+		1229FC6A20D97F9400EAF007 /* MethodInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1229FC6920D97F9400EAF007 /* MethodInteractor.m */; };
+		1229FC6D20D9816200EAF007 /* MethodPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1229FC6C20D9816200EAF007 /* MethodPresenter.m */; };
+		1229FC7420D9831600EAF007 /* MethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1229FC7320D9831600EAF007 /* MethodViewController.m */; };
+		1229FC7720D9849100EAF007 /* MethodWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1229FC7620D9849100EAF007 /* MethodWireframe.m */; };
 		1249EAF120D860C200FC4393 /* PurchaseStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1249EAF020D860C200FC4393 /* PurchaseStoreManager.m */; };
 		1249EAF820D8933300FC4393 /* AmountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1249EAF720D8933300FC4393 /* AmountViewController.m */; };
 		1249EAFB20D89D0A00FC4393 /* AmountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1249EAFA20D89D0A00FC4393 /* AmountPresenter.m */; };
@@ -52,6 +56,15 @@
 		1229FC5F20D925DD00EAF007 /* AppDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
 		1229FC6020D925DD00EAF007 /* AppDependencies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
 		1229FC6320D9663A00EAF007 /* MethodModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodModule.h; sourceTree = "<group>"; };
+		1229FC6820D97F9400EAF007 /* MethodInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodInteractor.h; sourceTree = "<group>"; };
+		1229FC6920D97F9400EAF007 /* MethodInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodInteractor.m; sourceTree = "<group>"; };
+		1229FC6B20D9816200EAF007 /* MethodPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodPresenter.h; sourceTree = "<group>"; };
+		1229FC6C20D9816200EAF007 /* MethodPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodPresenter.m; sourceTree = "<group>"; };
+		1229FC7120D9820F00EAF007 /* MethodViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodViewInterface.h; sourceTree = "<group>"; };
+		1229FC7220D9831600EAF007 /* MethodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodViewController.h; sourceTree = "<group>"; };
+		1229FC7320D9831600EAF007 /* MethodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodViewController.m; sourceTree = "<group>"; };
+		1229FC7520D9849100EAF007 /* MethodWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodWireframe.h; sourceTree = "<group>"; };
+		1229FC7620D9849100EAF007 /* MethodWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodWireframe.m; sourceTree = "<group>"; };
 		1249EAEF20D860C200FC4393 /* PurchaseStoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchaseStoreManager.h; sourceTree = "<group>"; };
 		1249EAF020D860C200FC4393 /* PurchaseStoreManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseStoreManager.m; sourceTree = "<group>"; };
 		1249EAF620D8933300FC4393 /* AmountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountViewController.h; sourceTree = "<group>"; };
@@ -76,6 +89,7 @@
 		12511D4420D2139A00E433BD /* PaymentAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12511D4820D2139A00E433BD /* PaymentAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentAppUITests.m; sourceTree = "<group>"; };
 		12511D4A20D2139A00E433BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12675CEC20D9B4BE00B7248B /* MethodInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodInteractorIO.h; sourceTree = "<group>"; };
 		12F83E8120D6B0C10036656D /* PaymentMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentMethod.h; sourceTree = "<group>"; };
 		12F83E8220D6B0C10036656D /* PaymentMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentMethod.m; sourceTree = "<group>"; };
 		12F83E8520D6B1DC0036656D /* CardIssuer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardIssuer.h; sourceTree = "<group>"; };
@@ -135,6 +149,44 @@
 				1229FC6320D9663A00EAF007 /* MethodModule.h */,
 			);
 			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		1229FC6420D9676F00EAF007 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1229FC6720D96C9900EAF007 /* Wireframe */,
+				1229FC6620D96C9200EAF007 /* View */,
+				1229FC6520D96C8A00EAF007 /* Presenter */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		1229FC6520D96C8A00EAF007 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1229FC6B20D9816200EAF007 /* MethodPresenter.h */,
+				1229FC6C20D9816200EAF007 /* MethodPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1229FC6620D96C9200EAF007 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1229FC7120D9820F00EAF007 /* MethodViewInterface.h */,
+				1229FC7220D9831600EAF007 /* MethodViewController.h */,
+				1229FC7320D9831600EAF007 /* MethodViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1229FC6720D96C9900EAF007 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				1229FC7520D9849100EAF007 /* MethodWireframe.h */,
+				1229FC7620D9849100EAF007 /* MethodWireframe.m */,
+			);
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		1249EAF220D8920500FC4393 /* User Interface */ = {
@@ -238,6 +290,13 @@
 			path = PaymentAppUITests;
 			sourceTree = "<group>";
 		};
+		12675CED20D9E82800B7248B /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bank;
+			sourceTree = "<group>";
+		};
 		12F83E8420D6B0C70036656D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +315,7 @@
 		12F83E8D20D6B55A0036656D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				12675CED20D9E82800B7248B /* Bank */,
 				12F83E9820D6BDB20036656D /* Amount */,
 				12F83E8E20D6B5750036656D /* Method */,
 			);
@@ -265,6 +325,7 @@
 		12F83E8E20D6B5750036656D /* Method */ = {
 			isa = PBXGroup;
 			children = (
+				1229FC6420D9676F00EAF007 /* User Interface */,
 				1229FC6220D965F000EAF007 /* Module Interface */,
 				12F83E8F20D6B61C0036656D /* Application Logic */,
 			);
@@ -283,6 +344,9 @@
 		12F83E9020D6B6480036656D /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				1229FC6820D97F9400EAF007 /* MethodInteractor.h */,
+				1229FC6920D97F9400EAF007 /* MethodInteractor.m */,
+				12675CEC20D9B4BE00B7248B /* MethodInteractorIO.h */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -290,6 +354,8 @@
 		12F83E9120D6B6520036656D /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				12F83EA520D800C40036656D /* MethodAPIManager.h */,
+				12F83EA620D800C40036656D /* MethodAPIManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -355,8 +421,6 @@
 		12F83EA320D8002F0036656D /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				12F83EA520D800C40036656D /* MethodAPIManager.h */,
-				12F83EA620D800C40036656D /* MethodAPIManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -585,8 +649,12 @@
 			files = (
 				12F83EA720D800C40036656D /* MethodAPIManager.m in Sources */,
 				12F83EA220D6C2A30036656D /* Purchase.m in Sources */,
+				1229FC6A20D97F9400EAF007 /* MethodInteractor.m in Sources */,
 				1249EAFB20D89D0A00FC4393 /* AmountPresenter.m in Sources */,
+				1229FC7420D9831600EAF007 /* MethodViewController.m in Sources */,
 				12F83E8320D6B0C10036656D /* PaymentMethod.m in Sources */,
+				1229FC6D20D9816200EAF007 /* MethodPresenter.m in Sources */,
+				1229FC7720D9849100EAF007 /* MethodWireframe.m in Sources */,
 				1249EAF820D8933300FC4393 /* AmountViewController.m in Sources */,
 				12511D3420D2139A00E433BD /* main.m in Sources */,
 				1229FC6120D925DD00EAF007 /* AppDependencies.m in Sources */,

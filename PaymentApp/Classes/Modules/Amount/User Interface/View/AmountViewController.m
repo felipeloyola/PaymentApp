@@ -32,5 +32,8 @@
     self.amount.text = [NSString stringWithFormat:@"%d",amount];
 }
 
+- (IBAction)didPressEnter:(id)sender {
+    [self.eventHandler saveAmount:[self.amount.text intValue]];
+}
 
 @end

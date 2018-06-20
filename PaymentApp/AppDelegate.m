@@ -19,10 +19,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    AppDependencies *dependencies = [[AppDependencies alloc] init];
+    AppDependencies *dependencies = [[AppDependencies alloc] initWithWindows:self.window];
     self.dependencies = dependencies;
     
-    [self.dependencies installRootViewControllerIntoWindow:self.window];
+    [self.dependencies installRootViewController];
     
     return YES;
 }
