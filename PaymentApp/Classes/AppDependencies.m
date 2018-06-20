@@ -8,6 +8,7 @@
 
 #import "AppDependencies.h"
 #import <UIKit/UIKit.h>
+#import "PurchaseStoreManager.h"
 #import "AmountWireframe.h"
 #import "VTDRootWireframe.h"
 #import "AmountPresenter.h"
@@ -16,6 +17,11 @@
 #import "MethodPresenter.h"
 #import "MethodInteractor.h"
 #import "MethodAPIManager.h"
+
+#import "BankWireframe.h"
+#import "BankPresenter.h"
+#import "BankInteractor.h"
+#import "BankAPIManager.h"
 
 
 @interface AppDependencies ()
@@ -42,6 +48,8 @@
 
 - (void)configureDependencies:(UIWindow *)window
 {
+    PurchaseStoreManager *purchaseManager = [[PurchaseStoreManager alloc] init];
+    
     VTDRootWireframe *rootWireframe = [[VTDRootWireframe alloc] init];
     rootWireframe.window =  window;
     
@@ -49,6 +57,8 @@
     AmountWireframe *amountWireFrame = [[AmountWireframe alloc] init];
     AmountPresenter *amountPresenter = [[AmountPresenter alloc] init];
     AmountInteractor *amountInteractor = [[AmountInteractor alloc] init];
+    
+    amountInteractor.manager = purchaseManager;
     
     amountPresenter.amountInteractor = amountInteractor;
     amountPresenter.amountWireframe = amountWireFrame;
@@ -63,6 +73,7 @@
     MethodInteractor *methodInteractor = [[MethodInteractor alloc] initWithDataManager:[[MethodAPIManager alloc] init]];
     
     methodInteractor.output = methodPresenter;
+    methodInteractor.manager = purchaseManager;
     
     methodPresenter.methodInteractor = methodInteractor;
     methodPresenter.methodWireframe = methodWireframe;
@@ -71,6 +82,23 @@
     methodWireframe.methodPresenter = methodPresenter;
     
     amountWireFrame.methodWireframe = methodWireframe;
+    
+    BankWireframe *bankWireframe = [[BankWireframe alloc] init];
+    BankPresenter *bankPresenter = [[BankPresenter alloc] init];
+    BankInteractor *bankInteractor = [[BankInteractor alloc] initWithDataManager:[[BankAPIManager alloc] init]];
+    
+    bankInteractor.output = bankPresenter;
+    bankInteractor.manager = purchaseManager;
+    
+    bankPresenter.bankInteractor = bankInteractor;
+    bankPresenter.bankWireframe = bankWireframe;
+    
+    bankWireframe.rootWireframe = rootWireframe;
+    bankWireframe.bankPresenter = bankPresenter;
+    
+    methodWireframe.bankWireframe = bankWireframe;
+    methodWireframe.amountWireframe = amountWireFrame;
+    
     
  
 }

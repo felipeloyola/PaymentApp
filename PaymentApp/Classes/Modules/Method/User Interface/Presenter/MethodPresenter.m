@@ -8,6 +8,8 @@
 
 #import "MethodPresenter.h"
 #import "PaymentMethod.h"
+#import "AmountWireframe.h"
+#import "BankWireframe.h"
 
 @implementation MethodPresenter
 
@@ -16,17 +18,28 @@
     [self.methodInteractor findUpcomingItems];
 }
 
-- (void)saveMethod:(NSString *)methodId name:(NSString *)name paymentTypeId:(NSString *)paymentTypeId status:(NSString *)status secureThumbnail:(NSURL *)secureThumbnail minAllowedAmount:(float)minAllowedAmount maxAllowedAmount:(float)maxAllowedAmount{
-    
-    PaymentMethod *method = [[PaymentMethod alloc] initWithMethodId:methodId name:name paymentTypeId:paymentTypeId status:status secureThumbnail:secureThumbnail minAllowedAmount:minAllowedAmount maxAllowedAmount:maxAllowedAmount];
-    
-    [self.methodInteractor savePaymentMethod:method];
+- (void)saveMethod:(PaymentMethod *)method{
+
+    if ([self.methodInteractor isValidPaymentMethod: method ]){
+        [self.methodInteractor savePaymentMethod:method];
+        [self.methodWireframe.bankWireframe presentBankInterface];
+    }else{
+        [self.userInterface showOutOfRangeAmountForMethodMessage];
+    }
     
 }
+
+- (void)goBack {
+
+    [self.methodWireframe.amountWireframe presentAmountInterface];
+}
+
 
 - (void)foundUpcomingItems:(NSArray *)upcomingItems{
     [self.userInterface loadMethods:upcomingItems];
 }
+
+
 
 
 @end

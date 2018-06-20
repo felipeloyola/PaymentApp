@@ -20,17 +20,6 @@
     return self;
 }
 
-+ (PurchaseStoreManager * ) getManager{
-    static PurchaseStoreManager *sharedManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedManager = [[self alloc] init];
-    });
-    return sharedManager;
-}
-
-
-
 
 - (Purchase *) findPurchase{
     return self.purchase;

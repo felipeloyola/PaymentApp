@@ -69,11 +69,20 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Pb-zz-Tp0">
                                 <rect key="frame" x="28" y="236" width="320" height="216"/>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC5-4A-QDC">
+                                <rect key="frame" x="293" y="587" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapNext:" destination="Mws-Ik-tqJ" eventType="touchUpInside" id="drY-zr-XeU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2Pb-zz-Tp0" firstAttribute="centerX" secondItem="jz7-Y0-JSG" secondAttribute="centerX" id="aDv-Lh-iow"/>
+                            <constraint firstItem="jz7-Y0-JSG" firstAttribute="trailing" secondItem="HC5-4A-QDC" secondAttribute="trailing" constant="50" id="fVW-MT-7rg"/>
                             <constraint firstItem="2Pb-zz-Tp0" firstAttribute="centerY" secondItem="jz7-Y0-JSG" secondAttribute="centerY" id="gI9-zs-Znc"/>
+                            <constraint firstItem="jz7-Y0-JSG" firstAttribute="bottom" secondItem="HC5-4A-QDC" secondAttribute="bottom" constant="50" id="hNc-PU-KNC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jz7-Y0-JSG"/>
                     </view>
@@ -84,6 +93,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mt5-jv-q4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1250" y="113"/>
+        </scene>
+        <!--Bank View Controller-->
+        <scene sceneID="gja-sE-TWI">
+            <objects>
+                <viewController storyboardIdentifier="BankViewController" id="IOr-S3-IyD" customClass="BankViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CLG-dF-ZXI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Uh-R7-u5x">
+                                <rect key="frame" x="28" y="236" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJk-cS-N3l">
+                                <rect key="frame" x="309" y="584" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapNext:" destination="IOr-S3-IyD" eventType="touchUpInside" id="oDj-WN-abF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Uh-R7-u5x" firstAttribute="centerY" secondItem="pDr-m6-dfn" secondAttribute="centerY" id="OMC-pf-5Xq"/>
+                            <constraint firstItem="9Uh-R7-u5x" firstAttribute="centerX" secondItem="pDr-m6-dfn" secondAttribute="centerX" id="WuS-qV-OqS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pDr-m6-dfn"/>
+                    </view>
+                    <connections>
+                        <outlet property="bankPicker" destination="9Uh-R7-u5x" id="njK-Ad-00p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Efb-kQ-lcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1953" y="113"/>
         </scene>
     </scenes>
 </document>

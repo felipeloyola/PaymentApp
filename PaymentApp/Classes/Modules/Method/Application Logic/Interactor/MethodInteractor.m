@@ -34,10 +34,14 @@
 }
 
 - (void) savePaymentMethod:(PaymentMethod *)method{
-    if ([self.manager findPurchase]){
-        Purchase *purchase = [self.manager findPurchase];
-        purchase.method = method;
-    }
+
+    Purchase *purchase = [self.manager findPurchase];
+    purchase.method = method;
+}
+
+- (Boolean)isValidPaymentMethod:(PaymentMethod *)method{
+    Purchase *purchase = [self.manager findPurchase];
+    return purchase.amount < method.maxAllowedAmount && purchase.amount > method.minAllowedAmount;
 }
 
 @end

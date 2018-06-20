@@ -23,6 +23,11 @@
 		12511D3420D2139A00E433BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12511D3320D2139A00E433BD /* main.m */; };
 		12511D3E20D2139A00E433BD /* PaymentAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12511D3D20D2139A00E433BD /* PaymentAppTests.m */; };
 		12511D4920D2139A00E433BD /* PaymentAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12511D4820D2139A00E433BD /* PaymentAppUITests.m */; };
+		12675CF720D9E93F00B7248B /* BankPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 12675CF620D9E93E00B7248B /* BankPresenter.m */; };
+		12675CFA20D9E96200B7248B /* BankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12675CF920D9E96200B7248B /* BankViewController.m */; };
+		12675CFE20D9E9BB00B7248B /* BankWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 12675CFD20D9E9BB00B7248B /* BankWireframe.m */; };
+		12675D0420D9EA8000B7248B /* BankInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 12675D0320D9EA8000B7248B /* BankInteractor.m */; };
+		12675D0720D9EA8F00B7248B /* BankAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12675D0620D9EA8F00B7248B /* BankAPIManager.m */; };
 		12F83E8320D6B0C10036656D /* PaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E8220D6B0C10036656D /* PaymentMethod.m */; };
 		12F83E8720D6B1DC0036656D /* CardIssuer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E8620D6B1DC0036656D /* CardIssuer.m */; };
 		12F83E8A20D6B2570036656D /* Installment.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E8920D6B2570036656D /* Installment.m */; };
@@ -90,6 +95,19 @@
 		12511D4820D2139A00E433BD /* PaymentAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentAppUITests.m; sourceTree = "<group>"; };
 		12511D4A20D2139A00E433BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12675CEC20D9B4BE00B7248B /* MethodInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodInteractorIO.h; sourceTree = "<group>"; };
+		12675CF120D9E90600B7248B /* BankModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankModule.h; sourceTree = "<group>"; };
+		12675CF520D9E93E00B7248B /* BankPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankPresenter.h; sourceTree = "<group>"; };
+		12675CF620D9E93E00B7248B /* BankPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankPresenter.m; sourceTree = "<group>"; };
+		12675CF820D9E96200B7248B /* BankViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankViewController.h; sourceTree = "<group>"; };
+		12675CF920D9E96200B7248B /* BankViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankViewController.m; sourceTree = "<group>"; };
+		12675CFB20D9E97500B7248B /* BankViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankViewInterface.h; sourceTree = "<group>"; };
+		12675CFC20D9E9BB00B7248B /* BankWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankWireframe.h; sourceTree = "<group>"; };
+		12675CFD20D9E9BB00B7248B /* BankWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankWireframe.m; sourceTree = "<group>"; };
+		12675D0120D9EA5600B7248B /* BankInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankInteractorIO.h; sourceTree = "<group>"; };
+		12675D0220D9EA8000B7248B /* BankInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankInteractor.h; sourceTree = "<group>"; };
+		12675D0320D9EA8000B7248B /* BankInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankInteractor.m; sourceTree = "<group>"; };
+		12675D0520D9EA8F00B7248B /* BankAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAPIManager.h; sourceTree = "<group>"; };
+		12675D0620D9EA8F00B7248B /* BankAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAPIManager.m; sourceTree = "<group>"; };
 		12F83E8120D6B0C10036656D /* PaymentMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentMethod.h; sourceTree = "<group>"; };
 		12F83E8220D6B0C10036656D /* PaymentMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentMethod.m; sourceTree = "<group>"; };
 		12F83E8520D6B1DC0036656D /* CardIssuer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardIssuer.h; sourceTree = "<group>"; };
@@ -293,8 +311,85 @@
 		12675CED20D9E82800B7248B /* Bank */ = {
 			isa = PBXGroup;
 			children = (
+				12675CF020D9E8D000B7248B /* Application Logic */,
+				12675CEF20D9E8C800B7248B /* User Interface */,
+				12675CEE20D9E8B900B7248B /* Module Interface */,
 			);
 			path = Bank;
+			sourceTree = "<group>";
+		};
+		12675CEE20D9E8B900B7248B /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				12675CF120D9E90600B7248B /* BankModule.h */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		12675CEF20D9E8C800B7248B /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				12675CF420D9E91F00B7248B /* Wireframe */,
+				12675CF320D9E91900B7248B /* View */,
+				12675CF220D9E91000B7248B /* Presenter */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		12675CF020D9E8D000B7248B /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				12675D0020D9EA1E00B7248B /* Interactor */,
+				12675CFF20D9EA1700B7248B /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		12675CF220D9E91000B7248B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				12675CF520D9E93E00B7248B /* BankPresenter.h */,
+				12675CF620D9E93E00B7248B /* BankPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		12675CF320D9E91900B7248B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12675CF820D9E96200B7248B /* BankViewController.h */,
+				12675CF920D9E96200B7248B /* BankViewController.m */,
+				12675CFB20D9E97500B7248B /* BankViewInterface.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12675CF420D9E91F00B7248B /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				12675CFC20D9E9BB00B7248B /* BankWireframe.h */,
+				12675CFD20D9E9BB00B7248B /* BankWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		12675CFF20D9EA1700B7248B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				12675D0520D9EA8F00B7248B /* BankAPIManager.h */,
+				12675D0620D9EA8F00B7248B /* BankAPIManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		12675D0020D9EA1E00B7248B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				12675D0120D9EA5600B7248B /* BankInteractorIO.h */,
+				12675D0220D9EA8000B7248B /* BankInteractor.h */,
+				12675D0320D9EA8000B7248B /* BankInteractor.m */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		12F83E8420D6B0C70036656D /* Model */ = {
@@ -661,10 +756,15 @@
 				12F83E8720D6B1DC0036656D /* CardIssuer.m in Sources */,
 				1249EB0020D8A2CA00FC4393 /* AmountWireframe.m in Sources */,
 				1249EAF120D860C200FC4393 /* PurchaseStoreManager.m in Sources */,
+				12675CFA20D9E96200B7248B /* BankViewController.m in Sources */,
+				12675CFE20D9E9BB00B7248B /* BankWireframe.m in Sources */,
+				12675CF720D9E93F00B7248B /* BankPresenter.m in Sources */,
 				12F83E9E20D6BFBC0036656D /* AmountInteractor.m in Sources */,
+				12675D0420D9EA8000B7248B /* BankInteractor.m in Sources */,
 				12511D2620D2139700E433BD /* AppDelegate.m in Sources */,
 				12F83E8A20D6B2570036656D /* Installment.m in Sources */,
 				12F83E9720D6B7600036656D /* VTDRootWireframe.m in Sources */,
+				12675D0720D9EA8F00B7248B /* BankAPIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

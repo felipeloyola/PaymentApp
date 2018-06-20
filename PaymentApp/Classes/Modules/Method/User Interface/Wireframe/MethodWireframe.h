@@ -12,6 +12,8 @@
 
 @class VTDRootWireframe;
 @class MethodPresenter;
+@class BankWireframe;
+@class AmountWireframe;
 
 @interface MethodWireframe : NSObject
 
@@ -19,6 +21,10 @@
 @property (nonatomic, strong) MethodPresenter *methodPresenter;
 
 @property (nonatomic, strong) VTDRootWireframe *rootWireframe;
+
+@property (nonatomic, strong) BankWireframe *bankWireframe;
+
+@property (nonatomic, strong) AmountWireframe *amountWireframe;
 
 - (void)presentMethodInterface;
 

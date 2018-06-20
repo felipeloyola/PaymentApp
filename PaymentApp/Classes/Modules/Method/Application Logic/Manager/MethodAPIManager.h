@@ -10,6 +10,6 @@
 
 @interface MethodAPIManager : NSObject
 
--(void)findMethods:(void (^)(NSArray *todoItems))completionBlock;
+-(void)findMethods:(void (^)(NSArray *methods))completionBlock;
 
 @end

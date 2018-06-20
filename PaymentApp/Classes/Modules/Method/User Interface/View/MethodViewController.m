@@ -78,5 +78,28 @@
     
 }
 
+- (IBAction)didTapNext:(id)sender {
+    PaymentMethod *selected = [self.methods objectAtIndex:[self.methodPicker selectedRowInComponent:0]];
+    [self.eventHandler saveMethod:selected];
+}
+
+- (void)showOutOfRangeAmountForMethodMessage{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                   message:@"Valor indicado fuera de rango para este metodo de pago"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* goBackAction = [UIAlertAction actionWithTitle:@"Cambiar Valor" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+                                                              [self.eventHandler goBack];
+                                                          }];
+    UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Cambiar Metodo" style:UIAlertActionStyleCancel
+                                                         handler:^(UIAlertAction * action) {
+                                                             
+                                                         }];
+    
+    [alert addAction:goBackAction];
+    [alert addAction:cancel];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end

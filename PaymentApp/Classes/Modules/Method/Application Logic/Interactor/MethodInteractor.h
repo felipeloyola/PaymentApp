@@ -23,6 +23,7 @@
 - (instancetype)initWithDataManager:(MethodAPIManager *)dataManager;
 
 - (void) savePaymentMethod:(PaymentMethod*) method;
-    
+
+- (Boolean) isValidPaymentMethod:(PaymentMethod*) method;
 
 @end

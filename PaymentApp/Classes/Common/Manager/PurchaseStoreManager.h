@@ -11,11 +11,7 @@
 
 @interface PurchaseStoreManager : NSObject
 
-@property(nonatomic,strong) PurchaseStoreManager *manager;
-
 @property(nonatomic,strong) Purchase *purchase;
-
-+ (PurchaseStoreManager *) getManager;
 
 - (Purchase *) findPurchase;
 

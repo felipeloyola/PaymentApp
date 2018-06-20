@@ -12,7 +12,7 @@
 
 @implementation MethodAPIManager
 
--(void)findMethods:(void (^)(NSArray *todoItems))completionBlock{
+-(void)findMethods:(void (^)(NSArray *methods))completionBlock{
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:@"https://api.mercadopago.com/v1/payment_methods?public_key=444a9ef5-8a6b-429f-abdf-587639155d88" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
