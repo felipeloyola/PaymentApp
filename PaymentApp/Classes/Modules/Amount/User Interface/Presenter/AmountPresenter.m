@@ -28,6 +28,11 @@
     
 }
 
-
+- (void) amountHasChanged:(NSString *)amount{
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    NSString *formated = [formatter stringFromNumber:[NSNumber numberWithInt:[amount intValue]]];
+    [self.interface showFormatedAmount:formated];
+}
 
 @end

@@ -11,7 +11,7 @@
 #import "MethodWireframe.h"
 #import "MethodViewController.h"
 #import "MethodPresenter.h"
-#import "VTDRootWireframe.h"
+#import "RootWireframe.h"
 
 static NSString *MethodViewControllerIdentifier = @"MethodViewController";
 

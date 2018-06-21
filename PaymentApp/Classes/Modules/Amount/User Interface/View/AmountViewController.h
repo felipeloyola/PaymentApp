@@ -16,4 +16,6 @@
 
 @property (nonatomic, strong) id<AmountModule> eventHandler;
 
+@property (strong, nonatomic) IBOutlet UILabel *formated;
+
 @end

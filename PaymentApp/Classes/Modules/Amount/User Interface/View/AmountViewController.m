@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.amount addTarget:self
+                  action:@selector(textFieldDidChange:)
+        forControlEvents:UIControlEventEditingChanged];
 
+}
+
+-(void) textFieldDidChange:(id)sender{
+    [self.eventHandler amountHasChanged:self.amount.text];
 }
 
 -(void) viewWillAppear:(BOOL)animated{
@@ -43,11 +51,29 @@
 
 
 - (void)initPreviusAmount:(int)amount {
-    self.amount.text = [NSString stringWithFormat:@"%d",amount];
+    if (amount > 0){
+        self.amount.text = [NSString stringWithFormat:@"%d",amount];
+    }else{
+        self.amount.text = @"";
+    }
+    
+}
+
+- (void)showFormatedAmount:(NSString *)formated{
+    self.formated.text = formated;
+}
+
+- (void)next{
+    [self.eventHandler saveAmount:[self.amount.text intValue]];
 }
 
 - (IBAction)didPressEnter:(id)sender {
-    [self.eventHandler saveAmount:[self.amount.text intValue]];
+    [self next];
 }
+
+- (IBAction)didTapNext:(id)sender {
+    [self next];
+}
+
 
 @end

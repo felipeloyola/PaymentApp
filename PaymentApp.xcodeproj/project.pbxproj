@@ -22,7 +22,6 @@
 		12511D3120D2139A00E433BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12511D2F20D2139A00E433BD /* LaunchScreen.storyboard */; };
 		12511D3420D2139A00E433BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12511D3320D2139A00E433BD /* main.m */; };
 		12511D3E20D2139A00E433BD /* PaymentAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12511D3D20D2139A00E433BD /* PaymentAppTests.m */; };
-		12511D4920D2139A00E433BD /* PaymentAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12511D4820D2139A00E433BD /* PaymentAppUITests.m */; };
 		12675CF720D9E93F00B7248B /* BankPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 12675CF620D9E93E00B7248B /* BankPresenter.m */; };
 		12675CFA20D9E96200B7248B /* BankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12675CF920D9E96200B7248B /* BankViewController.m */; };
 		12675CFE20D9E9BB00B7248B /* BankWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 12675CFD20D9E9BB00B7248B /* BankWireframe.m */; };
@@ -36,7 +35,7 @@
 		12F83E8320D6B0C10036656D /* PaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E8220D6B0C10036656D /* PaymentMethod.m */; };
 		12F83E8720D6B1DC0036656D /* CardIssuer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E8620D6B1DC0036656D /* CardIssuer.m */; };
 		12F83E8A20D6B2570036656D /* Installment.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E8920D6B2570036656D /* Installment.m */; };
-		12F83E9720D6B7600036656D /* VTDRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E9520D6B7600036656D /* VTDRootWireframe.m */; };
+		12F83E9720D6B7600036656D /* RootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E9520D6B7600036656D /* RootWireframe.m */; };
 		12F83E9E20D6BFBC0036656D /* AmountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83E9D20D6BFBC0036656D /* AmountInteractor.m */; };
 		12F83EA220D6C2A30036656D /* Purchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83EA120D6C2A30036656D /* Purchase.m */; };
 		12F83EA720D800C40036656D /* MethodAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F83EA620D800C40036656D /* MethodAPIManager.m */; };
@@ -97,8 +96,6 @@
 		12511D3D20D2139A00E433BD /* PaymentAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentAppTests.m; sourceTree = "<group>"; };
 		12511D3F20D2139A00E433BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12511D4420D2139A00E433BD /* PaymentAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		12511D4820D2139A00E433BD /* PaymentAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentAppUITests.m; sourceTree = "<group>"; };
-		12511D4A20D2139A00E433BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12675CEC20D9B4BE00B7248B /* MethodInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodInteractorIO.h; sourceTree = "<group>"; };
 		12675CF120D9E90600B7248B /* BankModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankModule.h; sourceTree = "<group>"; };
 		12675CF520D9E93E00B7248B /* BankPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankPresenter.h; sourceTree = "<group>"; };
@@ -132,8 +129,8 @@
 		12F83E8620D6B1DC0036656D /* CardIssuer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardIssuer.m; sourceTree = "<group>"; };
 		12F83E8820D6B2570036656D /* Installment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Installment.h; sourceTree = "<group>"; };
 		12F83E8920D6B2570036656D /* Installment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Installment.m; sourceTree = "<group>"; };
-		12F83E9520D6B7600036656D /* VTDRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDRootWireframe.m; sourceTree = "<group>"; };
-		12F83E9620D6B7600036656D /* VTDRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDRootWireframe.h; sourceTree = "<group>"; };
+		12F83E9520D6B7600036656D /* RootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootWireframe.m; sourceTree = "<group>"; };
+		12F83E9620D6B7600036656D /* RootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootWireframe.h; sourceTree = "<group>"; };
 		12F83E9C20D6BFBC0036656D /* AmountInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountInteractor.h; sourceTree = "<group>"; };
 		12F83E9D20D6BFBC0036656D /* AmountInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmountInteractor.m; sourceTree = "<group>"; };
 		12F83EA020D6C2A30036656D /* Purchase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Purchase.h; sourceTree = "<group>"; };
@@ -276,7 +273,6 @@
 			children = (
 				12511D2320D2139700E433BD /* PaymentApp */,
 				12511D3C20D2139A00E433BD /* PaymentAppTests */,
-				12511D4720D2139A00E433BD /* PaymentAppUITests */,
 				12511D2220D2139700E433BD /* Products */,
 				2D9B9D1C6EB9C54C0DAFD080 /* Pods */,
 				6E351E7FF3920FB35BE8DFF5 /* Frameworks */,
@@ -315,15 +311,6 @@
 				12511D3F20D2139A00E433BD /* Info.plist */,
 			);
 			path = PaymentAppTests;
-			sourceTree = "<group>";
-		};
-		12511D4720D2139A00E433BD /* PaymentAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				12511D4820D2139A00E433BD /* PaymentAppUITests.m */,
-				12511D4A20D2139A00E433BD /* Info.plist */,
-			);
-			path = PaymentAppUITests;
 			sourceTree = "<group>";
 		};
 		12675CED20D9E82800B7248B /* Bank */ = {
@@ -582,8 +569,8 @@
 		12F83E9420D6B7270036656D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				12F83E9620D6B7600036656D /* VTDRootWireframe.h */,
-				12F83E9520D6B7600036656D /* VTDRootWireframe.m */,
+				12F83E9620D6B7600036656D /* RootWireframe.h */,
+				12F83E9520D6B7600036656D /* RootWireframe.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -871,7 +858,7 @@
 				12511D2620D2139700E433BD /* AppDelegate.m in Sources */,
 				12675D1E20DAEB9C00B7248B /* InstallmentViewController.m in Sources */,
 				12F83E8A20D6B2570036656D /* Installment.m in Sources */,
-				12F83E9720D6B7600036656D /* VTDRootWireframe.m in Sources */,
+				12F83E9720D6B7600036656D /* RootWireframe.m in Sources */,
 				12675D0720D9EA8F00B7248B /* BankAPIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -888,7 +875,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12511D4920D2139A00E433BD /* PaymentAppUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

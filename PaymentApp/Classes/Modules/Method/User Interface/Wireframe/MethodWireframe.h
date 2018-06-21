@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 
-@class VTDRootWireframe;
+@class RootWireframe;
 @class MethodPresenter;
 @class BankWireframe;
 @class AmountWireframe;
@@ -20,7 +20,7 @@
 
 @property (nonatomic, strong) MethodPresenter *methodPresenter;
 
-@property (nonatomic, strong) VTDRootWireframe *rootWireframe;
+@property (nonatomic, strong) RootWireframe *rootWireframe;
 
 @property (nonatomic, strong) BankWireframe *bankWireframe;
 

@@ -1,5 +1,5 @@
 //
-// MMRootWireframe.m
+// MMRootWireframe.h
 //
 // Copyright (c) 2014 Mutual Mobile (http://www.mutualmobile.com/)
 //
@@ -21,23 +21,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "VTDRootWireframe.h"
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@implementation VTDRootWireframe
 
-- (void)showRootViewController:(UIViewController *)viewController{
-    
-    UINavigationController *navigationController = [self navigationController];
-    navigationController.viewControllers = @[viewController];
-}
+@interface RootWireframe : NSObject
 
+@property(nonatomic,strong) UIWindow *window;
 
-- (UINavigationController *)navigationController
-{
-    UINavigationController *navigationController = (UINavigationController *)[self.window rootViewController];
-    
-    return navigationController;
-}
+- (void)showRootViewController:(UIViewController *)viewController;
 
 @end

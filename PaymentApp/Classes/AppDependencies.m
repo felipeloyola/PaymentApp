@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "PurchaseStoreManager.h"
 #import "AmountWireframe.h"
-#import "VTDRootWireframe.h"
+#import "RootWireframe.h"
 #import "AmountPresenter.h"
 #import "AmountInteractor.h"
 #import "MethodWireframe.h"
@@ -55,7 +55,7 @@
 {
     PurchaseStoreManager *purchaseManager = [[PurchaseStoreManager alloc] init];
     
-    VTDRootWireframe *rootWireframe = [[VTDRootWireframe alloc] init];
+    RootWireframe *rootWireframe = [[RootWireframe alloc] init];
     rootWireframe.window =  window;
     
     

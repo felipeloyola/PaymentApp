@@ -12,7 +12,7 @@
 #import "BankWireframe.h"
 #import "BankViewController.h"
 #import "BankPresenter.h"
-#import "VTDRootWireframe.h"
+#import "RootWireframe.h"
 
 static NSString *BankViewControllerIdentifier = @"BankViewController";
 

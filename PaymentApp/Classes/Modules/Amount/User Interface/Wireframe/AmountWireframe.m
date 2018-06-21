@@ -8,7 +8,7 @@
 
 #import "AmountWireframe.h"
 #import "AmountViewController.h"
-#import "VTDRootWireframe.h"
+#import "RootWireframe.h"
 #import "AmountPresenter.h"
 #import "MethodWireframe.h"
 

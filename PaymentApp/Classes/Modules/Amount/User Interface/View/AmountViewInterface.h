@@ -12,5 +12,6 @@
 
 - (void)showInstallment:(NSString*)installmentMessage;
 - (void)initPreviusAmount:(int)amount;
+- (void)showFormatedAmount:(NSString*)formated;
 
 @end

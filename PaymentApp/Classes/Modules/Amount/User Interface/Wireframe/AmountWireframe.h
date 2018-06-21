@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class VTDRootWireframe;
+@class RootWireframe;
 @class AmountPresenter;
 @class MethodWireframe;
 
 @interface AmountWireframe : NSObject
 
 @property (nonatomic, strong) AmountPresenter *amountPresenter;
-@property (nonatomic, strong) VTDRootWireframe *rootWireframe;
+@property (nonatomic, strong) RootWireframe *rootWireframe;
 @property (nonatomic, strong) MethodWireframe *methodWireframe;
 
 - (void)presentAmountInterface;

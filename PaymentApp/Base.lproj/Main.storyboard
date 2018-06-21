@@ -33,6 +33,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c90-dY-IvL">
                                 <rect key="frame" x="50" y="328.5" width="275" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.94117647059999998" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
@@ -40,18 +41,36 @@
                                     <action selector="didPressEnter:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="cen-5p-ioJ"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxX-PU-4OS">
+                                <rect key="frame" x="170" y="195" width="35" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lv0-Jr-L1L">
+                                <rect key="frame" x="293" y="587" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sJ-DD-Tiq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c90-dY-IvL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1jj-g0-Ywq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c90-dY-IvL" secondAttribute="trailing" constant="50" id="1uA-Bd-lID"/>
                             <constraint firstItem="c90-dY-IvL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Bny-58-Ru4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lv0-Jr-L1L" secondAttribute="bottom" constant="50" id="WJe-H3-b5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lv0-Jr-L1L" secondAttribute="trailing" constant="50" id="bNJ-Lv-qfe"/>
+                            <constraint firstItem="FxX-PU-4OS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jhW-Cs-1fB"/>
+                            <constraint firstItem="c90-dY-IvL" firstAttribute="top" secondItem="FxX-PU-4OS" secondAttribute="bottom" constant="100" id="vUG-Qz-nx4"/>
                             <constraint firstItem="c90-dY-IvL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zld-OJ-sUg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="amount" destination="c90-dY-IvL" id="b6r-zE-29S"/>
+                        <outlet property="formated" destination="FxX-PU-4OS" id="rnu-LW-EU8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

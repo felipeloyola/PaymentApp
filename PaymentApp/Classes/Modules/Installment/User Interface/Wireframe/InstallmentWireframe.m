@@ -10,7 +10,7 @@
 #import "InstallmentWireframe.h"
 #import "InstallmentViewController.h"
 #import "InstallmentPresenter.h"
-#import "VTDRootWireframe.h"
+#import "RootWireframe.h"
 
 static NSString *InstallmentViewControllerIdentifier = @"InstallmentViewController";
 

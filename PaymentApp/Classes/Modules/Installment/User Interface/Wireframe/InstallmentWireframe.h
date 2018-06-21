@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@class VTDRootWireframe;
+@class RootWireframe;
 @class InstallmentPresenter;
 @class AmountWireframe;
 
@@ -17,7 +17,7 @@
 
 @property (nonatomic, strong) InstallmentPresenter *installmentPresenter;
 
-@property (nonatomic, strong) VTDRootWireframe *rootWireframe;
+@property (nonatomic, strong) RootWireframe *rootWireframe;
 
 @property (nonatomic, strong) AmountWireframe *amountWireframe;
 
