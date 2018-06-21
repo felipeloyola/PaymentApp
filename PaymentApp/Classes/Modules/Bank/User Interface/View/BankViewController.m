@@ -84,5 +84,20 @@
     [self.eventHandler goForward];
 }
 
+- (void) showBanksNotFound{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Sin Resultados"
+                                                                   message:@"No se encontraron resultados intente otro medio"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* acept = [UIAlertAction actionWithTitle:@"Aceptar" style:UIAlertActionStyleDefault
+                                                  handler:^(UIAlertAction * action) {
+                                                      [self.eventHandler goBack];
+                                                  }];
+    
+    
+    [alert addAction:acept];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end

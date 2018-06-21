@@ -16,4 +16,6 @@
 
 - (void)goForward;
 
+- (void)goBack;
+
 @end

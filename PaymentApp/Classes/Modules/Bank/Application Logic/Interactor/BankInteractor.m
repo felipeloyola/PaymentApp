@@ -30,12 +30,12 @@
 }
 
 - (void)findUpcomingItems{
-    if ([self.manager findPurchase]){
-        Purchase *purchase = [self.manager findPurchase];
-        [self.dataManager findBanks:^(NSArray *methods){
-            [self.output foundUpcomingItems:methods];
-        } :purchase.method.methodId];
-    }
+    
+    Purchase *purchase = [self.manager findPurchase];
+    [self.dataManager findBanks:^(NSArray *methods){
+        [self.output foundUpcomingItems:methods];
+    } :purchase.method.methodId];
+    
 
 }
 

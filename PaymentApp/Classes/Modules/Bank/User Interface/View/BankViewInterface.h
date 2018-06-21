@@ -13,6 +13,6 @@
 @protocol BankViewInterface <NSObject>
 
 - (void)loadBanks:(NSArray *)banks;
-
+- (void)showBanksNotFound;
 
 @end

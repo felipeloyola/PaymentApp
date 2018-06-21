@@ -100,6 +100,7 @@
     
     bankWireframe.rootWireframe = rootWireframe;
     bankWireframe.bankPresenter = bankPresenter;
+    bankWireframe.methodWireframe = methodWireframe;
     
     methodWireframe.bankWireframe = bankWireframe;
     methodWireframe.amountWireframe = amountWireFrame;

@@ -12,6 +12,7 @@
 @class RootWireframe;
 @class BankPresenter;
 @class InstallmentWireframe;
+@class MethodWireframe;
 
 @interface BankWireframe : NSObject
 
@@ -20,6 +21,8 @@
 @property (nonatomic, strong) RootWireframe *rootWireframe;
 
 @property (nonatomic, strong) InstallmentWireframe *installmentWireframe;
+
+@property (nonatomic, strong) MethodWireframe *methodWireframe;
 
 
 - (void)presentBankInterface;

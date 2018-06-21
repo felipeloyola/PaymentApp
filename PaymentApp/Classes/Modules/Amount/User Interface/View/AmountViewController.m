@@ -57,6 +57,8 @@
         self.amount.text = @"";
     }
     
+    [self textFieldDidChange:self.amount];
+    
 }
 
 - (void)showFormatedAmount:(NSString *)formated{
