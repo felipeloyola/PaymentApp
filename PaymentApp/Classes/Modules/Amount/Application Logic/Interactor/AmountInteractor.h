@@ -17,4 +17,6 @@
 
 - (void)save:(int) amount;
 
+-(NSString*) findInstallmentMessage;
+
 @end

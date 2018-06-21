@@ -16,8 +16,8 @@
 
 @interface InstallmentPresenter : NSObject<InstallmentModule,InstallmentInteractorOutput>
 
-@property (nonatomic, strong) InstallmentInteractor*  installmentInteractor;
-@property (nonatomic, strong) InstallmentWireframe*  installmentWireframe;
+@property (nonatomic, strong) InstallmentInteractor *installmentInteractor;
+@property (nonatomic, strong) InstallmentWireframe *installmentWireframe;
 @property (nonatomic, strong) UIViewController<InstallmentViewInterface> *userInterface;
 
 @end

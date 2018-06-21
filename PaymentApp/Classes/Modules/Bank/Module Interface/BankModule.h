@@ -14,4 +14,6 @@
 
 - (void)updateView;
 
+- (void)goForward;
+
 @end

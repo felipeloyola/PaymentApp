@@ -53,7 +53,9 @@
 }
 
 - (IBAction)didTapFinish:(id)sender {
-    
+    Installment *installment = [self.installments objectAtIndex:[self.installmentPicker selectedRowInComponent:0]];
+    [self.eventHandler saveInstallment:installment];
+    [self.eventHandler finish];
 }
 
 @end

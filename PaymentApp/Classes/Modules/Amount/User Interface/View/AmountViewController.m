@@ -24,9 +24,23 @@
 }
 
 
-- (void)showOutOfRangeMessage {
+- (void)showInstallment:(NSString*)installmentMessage{
     
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Compra Terminada"
+                                                                   message:installmentMessage
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* acept = [UIAlertAction actionWithTitle:@"Aceptar" style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction * action) {
+                                                             
+                                                         }];
+
+    
+    [alert addAction:acept];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
+
 
 - (void)initPreviusAmount:(int)amount {
     self.amount.text = [NSString stringWithFormat:@"%d",amount];

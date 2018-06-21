@@ -8,6 +8,7 @@
 
 #import "BankPresenter.h"
 #import "CardIssuer.h"
+#import "InstallmentWireframe.h"
 
 @implementation BankPresenter
 
@@ -24,5 +25,9 @@
 
 - (void)foundUpcomingItems:(NSArray *)upcomingItems{
     [self.userInterface loadBanks:upcomingItems];
+}
+
+-(void) goForward{
+    [self.bankWireframe.installmentWireframe presentInstallmentInterface];
 }
 @end

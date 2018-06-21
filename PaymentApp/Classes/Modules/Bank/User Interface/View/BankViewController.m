@@ -79,7 +79,9 @@
 }
 
 - (IBAction)didTapNext:(id)sender {
-    
+    CardIssuer *bank = [self.banks objectAtIndex:[self.bankPicker selectedRowInComponent:0]];
+    [self.eventHandler saveBank:bank];
+    [self.eventHandler goForward];
 }
 
 

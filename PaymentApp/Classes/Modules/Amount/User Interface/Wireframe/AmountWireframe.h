@@ -20,6 +20,7 @@
 @property (nonatomic, strong) MethodWireframe *methodWireframe;
 
 - (void)presentAmountInterface;
+- (void)presentAmountInterfaceAndShowInstallments;
 - (void)presentMethodInterface;
 
 @end

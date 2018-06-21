@@ -18,6 +18,10 @@
 
 }
 
+-(void) showInstallment{
+    [self.interface showInstallment:[self.amountInteractor findInstallmentMessage]];
+}
+
 - (void) updateView{
     
     [self.interface initPreviusAmount:[self.amountInteractor findPreviusAmount]];

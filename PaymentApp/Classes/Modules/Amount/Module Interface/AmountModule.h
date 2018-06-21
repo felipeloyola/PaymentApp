@@ -11,6 +11,7 @@
 @protocol AmountModule <NSObject>
 
 - (void)saveAmount:(int) amount;
+- (void)showInstallment;
 - (void)updateView;
 
 @end

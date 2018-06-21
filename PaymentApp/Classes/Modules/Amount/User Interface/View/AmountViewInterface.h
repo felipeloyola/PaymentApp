@@ -9,7 +9,8 @@
 
 @protocol AmountViewInterface <NSObject>
 
-- (void)showOutOfRangeMessage;
+
+- (void)showInstallment:(NSString*)installmentMessage;
 - (void)initPreviusAmount:(int)amount;
 
 @end

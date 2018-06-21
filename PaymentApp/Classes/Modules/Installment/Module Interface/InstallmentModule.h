@@ -13,5 +13,7 @@
 
 - (void)updateView;
 
+- (void)finish;
+
 @end
 

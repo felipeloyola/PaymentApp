@@ -33,6 +33,19 @@ static NSString *ListViewControllerIdentifier = @"AmountViewController";
 }
 
 
+- (void)presentAmountInterfaceAndShowInstallments{
+    
+    AmountViewController *amountViewController = [self amountViewControllerFromStoryboard];
+    amountViewController.eventHandler = self.amountPresenter;
+    self.amountPresenter.interface = amountViewController;
+    self.amountViewController = amountViewController;
+    
+    [self.rootWireframe showRootViewController:amountViewController];
+    
+    [self.amountPresenter showInstallment];
+    
+}
+
 - (AmountViewController *)amountViewControllerFromStoryboard{
     
     UIStoryboard *storyboard = [self mainStoryboard];

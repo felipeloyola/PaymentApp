@@ -21,11 +21,15 @@
     [manager GET:url parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         
         NSMutableArray *installments = [[NSMutableArray alloc] init];
-        
-        for (NSDictionary *aInstallment in responseObject){
-            Installment *installment = [[Installment alloc] initWithInstallmentsNumber:[[aInstallment valueForKey:@"payer_costs"] intValue] installmentsRecommendedMessage:[aInstallment valueForKey:@"recommended_message"]];
-            [installments addObject:installment];
+        for (NSDictionary *item in responseObject){
+            for (NSDictionary *aInstallment in [item valueForKey:@"payer_costs"]){
+                Installment *installment = [[Installment alloc]
+                                            initWithInstallmentsNumber:[[aInstallment valueForKey:@"installments"] intValue]
+                                            installmentsRecommendedMessage:[aInstallment valueForKey:@"recommended_message"]];
+                [installments addObject:installment];
+            }
         }
+
         if (completionBlock){
             completionBlock(installments);
         }

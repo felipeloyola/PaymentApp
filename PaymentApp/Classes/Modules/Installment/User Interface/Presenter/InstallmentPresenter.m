@@ -8,6 +8,8 @@
 
 #import "InstallmentPresenter.h"
 #import "Installment.h"
+#import "AmountWireframe.h"
+#import "InstallmentWireframe.h"
 
 @implementation InstallmentPresenter
 
@@ -21,6 +23,11 @@
 
 - (void)foundUpcomingItems:(NSArray *)upcomingItems{
     [self.userInterface loadInstallment:upcomingItems];
+}
+
+-(void) finish{
+    
+    [self.installmentWireframe.amountWireframe presentAmountInterfaceAndShowInstallments];
 }
 
 @end

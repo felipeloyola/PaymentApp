@@ -12,11 +12,8 @@
 @implementation AmountInteractor
 
 - (int)findPreviusAmount{
-    if ([self.manager findPurchase]){
-        Purchase *purchase = [self.manager findPurchase];
-        return purchase.amount;
-    }
-    return 0;
+    Purchase *purchase = [self.manager findPurchase];
+    return purchase.amount;
 }
 
 - (void)save:(int) amount{
@@ -26,6 +23,10 @@
         purchase.amount = amount;
 
     }
-    
+}
+
+-(NSString*) findInstallmentMessage{
+    Purchase *purchase = [self.manager findPurchase];
+    return purchase.installment.installmentsRecommendedMessage;
 }
 @end

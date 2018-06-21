@@ -11,6 +11,7 @@
 
 @class VTDRootWireframe;
 @class InstallmentPresenter;
+@class AmountWireframe;
 
 @interface InstallmentWireframe : NSObject
 
@@ -18,9 +19,9 @@
 
 @property (nonatomic, strong) VTDRootWireframe *rootWireframe;
 
+@property (nonatomic, strong) AmountWireframe *amountWireframe;
 
 - (void)presentInstallmentInterface;
-
 
 @end
 

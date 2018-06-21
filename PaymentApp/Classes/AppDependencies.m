@@ -112,9 +112,15 @@
     installmentInteractor.manager = purchaseManager;
     
     installmentPresenter.installmentInteractor = installmentInteractor;
+    installmentPresenter.installmentWireframe = installmentWireframe;
     
+    installmentWireframe.amountWireframe = amountWireFrame;
+    installmentWireframe.rootWireframe = rootWireframe;
+    installmentWireframe.installmentPresenter = installmentPresenter;
     
- 
+    bankWireframe.installmentWireframe = installmentWireframe;
+    
+
 }
 
 @end
